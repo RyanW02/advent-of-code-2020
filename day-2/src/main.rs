@@ -23,15 +23,8 @@ fn main() {
     println!("Valid passwords: {}", valid);
 }
 
-struct Password {
-    min: i32,
-    max: i32,
-    char: char,
-    password: String,
-}
-
 fn read_input() -> Vec<String> {
-    fs::read_to_string("input.txt").unwrap()
+    fs::read_to_string("../input.txt").unwrap()
         .lines()
         .map(|s| s.to_owned())
         .collect()

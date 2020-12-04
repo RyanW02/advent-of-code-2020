@@ -14,7 +14,7 @@ fn main() {
 }
 
 fn read_input() -> Vec<i32> {
-    fs::read_to_string("input.txt")
+    fs::read_to_string("../input.txt")
         .expect("Failed to read input.txt")
         .lines()
         .map(|s| s.parse().unwrap())
