@@ -42,7 +42,7 @@ fn get_trees(x_offset: usize, y_offset: usize) -> usize {
 
 // Returns a Vec of rows of cells
 fn parse_input() -> Vec<Vec<Cell>> {
-    fs::read_to_string("input_one.txt").unwrap().lines()
+    fs::read_to_string("input.txt").unwrap().lines()
         .map(|line| line.chars())
         .map(|chars| chars.map(Cell::from_char).collect())
         .collect()
